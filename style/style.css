@@ -1,0 +1,438 @@
+/*###############################
+###
+###     STYLESHEET INSTAGRAM CLON
+###     version 1.0.0
+###     author: Benjamin Benenwitz
+###
+###
+***       ██████╗  ▀█
+***       ██╔══██╗ █▄
+***       ██████╦╝
+***       ██╔══██╗
+***       ██████╦╝
+***       ╚═════╝
+###
+#################################*/
+
+/*###############################
+###
+###     GENERAL STYLING
+###
+###     CLASSES
+###
+#################################*/
+
+
+/*#######################       GENERAL STYLING*/
+
+:root{
+    --bg: #f4f4f4;
+    --text: #191919;
+    --hover: #cccccc;
+    --link: #00adea;
+}
+
+body{
+    margin: auto;
+
+    font-family: tahoma;
+
+    width: 100%;
+    height: 100vh;
+
+    background: var(--bg);
+    overflow: auto;
+}
+
+p{
+    all:unset;
+    line-height: 16pt;
+}
+
+li{
+    list-style: none;
+    font-size: 14pt;
+}
+
+
+/*#######################               CLASSES*/
+
+/*
+*** MULTIY CLASSES
+*/
+.border {
+    border-bottom: solid 1px var(--text);
+    width: 100%;
+    padding-bottom: 16px;
+    display: block;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:32px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:16px;
+    margin-right: 16px;
+}
+
+.flex-row-betw{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-t{
+    margin-top: 24px;
+}
+
+.margin-t-sm{
+    margin-top: 8px;
+}
+
+.margin-l{
+    margin-left:16px;
+}
+
+.margin{
+    margin:8px;
+}
+
+.margin-b{
+    margin-bottom: 16px;
+}
+
+.spacing{
+    padding: 8px;
+    margin: 16px;
+}
+
+.hide{
+    display: none !important;
+    transition: all 250ms;
+}
+
+.show{
+    display: block;
+    transition: all 250ms;
+}
+
+.link{
+    color:var(--link);
+}
+.link:hover{
+    cursor: pointer;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 0 0 10%;
+    gap:64px;
+
+    position: absolute;
+    left:320px;
+    right: 0;
+    top:0;
+}
+
+.hover {
+    background: var(--bg);
+    width: 64px;
+    height: auto;
+    padding:8px 0px;
+    border-radius: 8px;
+    text-align: center;
+    
+    transition: all 250ms;
+    cursor: pointer;
+}
+
+.hover:hover {
+    background: var(--hover);
+    
+}
+
+/*
+*** SIDEMENU START
+*/
+.side-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-shadow: 0px 0px 20px var(--hover);
+
+    height: 100%;
+    padding: 0 16px 0 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+
+    margin: 32px 0px 48px 32px;
+}
+
+.side-menu-img{
+    margin-left:24px;
+
+    height: 24px;
+    width: auto;
+}
+
+.side-menu .side-menu-hover:hover {
+    background: var(--hover);
+    border-radius: 8px;
+    width: calc(100%-8px);
+    transition: all 250ms;
+}
+/*
+*** SIDEMENU END
+*/
+
+/*
+*** SIDEMENU TABLET START
+*/
+.side-menu-tablet{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-shadow: 0px 0px 20px var(--hover);
+
+    max-width: 150px;
+    width: 150px;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 48px;
+}
+
+.side-menu-tablet-logo{
+    height: 32px;
+    width: auto;
+
+    margin-top: 32px;
+}
+
+.side-menu-img-tablet{
+    height: 24px;
+    width: auto;
+}
+
+/*
+*** SIDEMENU TABLET END
+*/
+
+/*
+*** SIDEMENU MOBILE START
+*/
+.side-menu-mobile{
+    position: fixed;
+    bottom: -20px;
+    left:0;
+    right: 0;
+
+    margin: 0 0 16px 0;
+
+    box-shadow: 0px -16px 20px var(--hover);
+    background: var(--bg);
+    z-index: 999;
+    height: 88px;
+}
+
+.side-menu-img-mobile{
+    height: 24px;
+    width: auto;
+}
+/*
+*** SIDEMENU MOBILE END
+*/
+
+/*
+*** CONTENT SECTION START
+*/
+
+.static-content{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    align-items: center;
+
+    position: relative;
+    top:64px;
+}
+
+.static-content-follow{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 25%;
+
+    position: relative;
+    top:64px;
+}
+
+
+.bg1{
+    background: url(../assets/follower-01.png);
+    background-position: center center ;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg2{
+    background: url(../assets/follower-02.png);
+    background-position: center center ;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg3{
+    background: url(../assets/follower-03.png);
+    background-position: center center ;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg4{
+    background: url(../assets/follower-04.png);
+    background-position: center center ;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg5{
+    background: url(../assets/follower-05.png);
+    background-position: center center ;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg6{
+    background: url(../assets/follower-06.png);
+    background-position: center center ;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg7{
+    background: url(../assets/follower-07.png);
+    background-position: center center ;
+    background-repeat:no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg8{
+    background: url(../assets/follower-08.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg9{
+    background: url(../assets/follower-09.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg10{
+    background: url(../assets/follower-10.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bg11{
+    background: url(../assets/follower-11.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.bookmark{
+    background: url(../assets/bookmark.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.bookmark-active{
+    background: url(../assets/bookmark-active.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.like-icon{
+    background: url(../assets/follow.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.like-icon-active{
+    background: url(../assets/like.png);
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+
+/*
+*** CONTENT SECTION END
+*/

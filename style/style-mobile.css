@@ -1,0 +1,77 @@
+/*###############################
+###
+###     STYLESHEET INSTAGRAM CLON
+###     version 1.0.0
+###     author: Benjamin Benenwitz
+###
+###
+***       ██████╗  ▀█
+***       ██╔══██╗ █▄
+***       ██████╦╝
+***       ██╔══██╗
+***       ██████╦╝
+***       ╚═════╝
+###
+#################################*/
+
+@media screen and (max-width: 1440px) {
+  .static-content-follow{
+    display: none;
+  }
+  #main-content.static-content{
+    right:32px;
+  }
+  .wrapper{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-row{
+        justify-content: center;
+    }
+    .margin{
+        margin-left: 0;
+    }
+    .bg1, .bg2, .bg3, .bg4, .bg5, .bg6, .bg7{
+      width: 50px;
+      height:50px;
+    }
+    .wrapper{
+      justify-content: center;
+      left:180px;
+      right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #followers{
+      display: none;
+    }
+    #main-content.static-content{
+      gap:0;
+      right: 0;
+    }
+    .wrapper{
+      left:0;
+    }
+   .flex-row{
+    gap:16px;
+   }
+   .hover{
+    border-radius: 20px;
+    width: 48px;
+   }
+}
+
+@media screen and (max-width: 650px) {
+  .posts{
+    width: 400px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .posts{
+    width: 280px !important;
+  }
+}

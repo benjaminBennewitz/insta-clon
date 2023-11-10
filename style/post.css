@@ -1,0 +1,83 @@
+/*###############################
+###
+###     STYLESHEET FOR POSTS INSTAGRAM CLON
+###     version 1.0.0
+###     author: Benjamin Benenwitz
+###
+###
+***       ██████╗  ▀█
+***       ██╔══██╗ █▄
+***       ██████╦╝
+***       ██╔══██╗
+***       ██████╦╝
+***       ╚═════╝
+###
+#################################*/
+
+/*###############################
+###
+###     CLASSES
+###
+#################################*/
+
+
+/*#######################       CLASSES*/
+
+.posts{
+    max-width:500px;
+    width: 500px;
+    height: fit-content;
+
+    padding:16px;
+    
+    background: var(--bg);
+    box-shadow: 5px 5px 10px var(--hover);
+
+    margin: 32px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-posts-header-outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:8px;
+}
+
+.flex-posts-header{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap:32px;
+}
+
+.posts-header-img{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.img-posts{
+    width: 100%;
+    height: auto;
+}
+
+.flex-like-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.posts-icons{
+    height: 24px;
+    width: auto;
+    cursor: pointer;
+}
+
+.minus{
+    margin-left: -16px;
+}
